@@ -160,31 +160,42 @@ footer{
   font-size: 13px;
 }
 @media screen and (max-width: 768px) {
-  
+
   nav .menu {
-    flex-direction: column;
-    padding-left: 0;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    gap: 8px 15px; 
+    padding: 10px 0;
   }
-  
+
   .menu li {
-    margin: 10px 0;
+    margin: 0; 
   }
 
   .section {
-    flex-direction: column;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
     padding: 20px 15px;
   }
 
   .presentation {
     width: 90%;
-    margin: 15% auto;
     font-size: 16px;
+    text-align: center;
+    margin: 10px 0;
   }
 
+  .photo {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0; 
+    margin: 15px 0;
+  }
 
   .photo img {
-    width: 120px;
+    width: 130px; 
     border-width: 10px;
   }
 
@@ -194,9 +205,11 @@ footer{
   }
 
   .photo-logos {
+    display: flex;
     justify-content: center;
-    padding-left: 0;
-    padding-right: 0;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
   }
 
   .photo-logos img {
@@ -206,10 +219,11 @@ footer{
   .contact {
     flex-direction: column;
     padding: 10px;
+    align-items: center;
   }
-  
+
   .contact li {
-    margin: 10px 0;
+    margin: 5px 0;
   }
 
   footer {
