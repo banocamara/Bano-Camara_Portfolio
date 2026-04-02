@@ -159,8 +159,85 @@ footer{
   padding-left: 5%;
   font-size: 13px;
 }
+.formulaire {
+  width: 60%;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 15px;
+  text-align: center;
+}
+
+.formulaire h2 {
+  margin-bottom: 15px;
+}
+
+.formulaire form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulaire input,
+.formulaire textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.formulaire button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #00bfff;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.formulaire button:hover {
+  background: #009acd;
+}
+
+.competences {
+  text-align: center;
+  margin: 20px;
+}
+
+.competences ul {
+  list-style: none;
+}
+
+.competences li {
+  margin: 8px 0;
+  color: #00bfff;
+}
+.recherche {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.recherche input {
+  width: 50%;
+  max-width: 400px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.recherche input:focus {
+  box-shadow: 0 0 5px #00bfff;
+}
+
 @media screen and (max-width: 768px) {
 
+  .recherche input {
+  width: 80%;
+  }
   nav .menu {
     display: grid;
     grid-template-columns: repeat(2, auto);
