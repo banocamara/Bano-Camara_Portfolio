@@ -12,59 +12,113 @@
 <body>
   
     <nav>
-        <ul class="menu">
+        <div class="menu">
             <li><a href="../index.html">Accueil</a></li>
-            <li><a href="bloc.html">Bloc</a></li>
-            <li><a href="about.html">À propos</a></li>
-            <li><a href="projects.html">Projets</a></li>
-        </ul>
+            <li><a href="pages/bloc.html">Bloc</a></li>
+            <li><a href="pages/about.html">À propos</a></li>
+            <li><a href="pages/projects.html">Projets</a></li>
+        </div>
     </nav>
    
-      <div class="projet">
+    
+ <div class="projet">
       <h2>Mes projets</h2>
 
         <div class="recherche">
           <input type="text" placeholder="Rechercher un projet...">
         </div>
-        
-      <div class="devascend">
-
+      <div class="sahemarket">
           <h3>SahelMarket</h3>
           <p>
-            Cette plateforme est actuellement en cours de développement et permettra aux <br>
+            Cette plateforme est actuellement en cours de développement et permettra aux 
             utilisateurs de publier et consulter des annonces
-            dans différents domaines : <br>emploi, vente de produits (voitures, téléphones, etc.) 
-            et location de biens (maisons, appartements). <br>
-            L’objectif est d’offrir une alternative plus organisée et fiable aux échanges informels <br>
-            sur les réseaux sociaux comme WhatsApp ou Facebook, en centralisant toutes les annonces sur <br>
+            dans différents domaines : emploi, vente de produits (voitures, téléphones, etc.) 
+            et location de biens (maisons, appartements). 
+            L’objectif est d’offrir une alternative plus organisée et fiable aux échanges informels 
+            sur les réseaux sociaux comme WhatsApp ou Facebook, en centralisant toutes les annonces sur 
             une seule plateforme accessible et simple d’utilisation.
           </p>
-          <div>
+          <div class="video">
             <video src="../videos/video_sahelmarket.mp4" width="35%" autoplay muted loop ></video>
           </div>
-           <li>
-             <strong>Technologies :</strong> HTML & CSS 
-          </li>
-          
-     </div>
-     <br>
-       <div class="logo">
-            <h3>Design d’affiches créatives autour de LEGO</h3>
-            <p>
-                Conception d’affiches visuelles créatives inspirées de l’univers LEGO, avec un accent<br> sur l’harmonie des couleurs, 
-                la mise en page et la clarté du message. <br>
-                Ce projet m’a permis de développer mon sens du design, de la composition graphique<br> et de la présentation visuelle.
-            </p>
-          <div class="photo-logos">
-            <img src="../images/Logo_Picsart.jpeg" alt="picsart" width="120">   
-            <img src="../images/Logo-canva.jpeg" alt="canva" width="120"> 
-          </div>
+           <h4>Technologies :</h4>
+             <ul class="features">
+              <li>HTML</li>
+              <li> CSS</li>
+             </ul>
+        </div>
 
-          <li>
-             <strong>Technologies :</strong> Picsart & Canva
-          </li>
-    </div>    
-  </div>
+      <div class="poubelle">
+        <h3>Poubelle intelligente automatisée (IoT)</h3>
+
+        <p>
+          Dans le cadre de notre formation en Génie Logiciel et Administration des Réseaux (GLAR), 
+          nous avons conçu une poubelle intelligente automatisée basée sur un microcontrôleur ESP32.
+        </p>
+
+        <p>
+          Ce système permet d’ouvrir et de fermer automatiquement le couvercle sans contact physique,
+          grâce à un capteur à ultrasons. Il s’inscrit dans une logique d’hygiène et d’innovation 
+          inspirée de l’Internet des Objets (IoT).
+        </p>
+
+        <p>
+          La poubelle collecte également des données environnementales (température et humidité)
+          et les transmet vers une interface web accessible à distance.
+        </p>
+
+        <h4>Fonctionnalités :</h4>
+        <ul class="features">
+          <li>Détection de présence avec capteur ultrason</li>
+          <li>Ouverture automatique avec servomoteur</li>
+          <li>Indication visuelle via LED</li>
+          <li>Signal sonore avec buzzer</li>
+          <li>Affichage sur écran LCD</li>
+          <li>Mesure température et humidité (DHT11)</li>
+          <li>Transmission des données via Wi-Fi</li>
+        </ul>
+
+        <h4>Outils utilisés :</h4>
+        <ul class="outils">
+          <li>ESP32</li>
+          <li>Arduino IDE</li>
+          <li>Capteur ultrason (HC-SR04)</li>
+          <li>Servomoteur</li>
+          <li>DHT11</li>
+          <li>LCD</li>
+          <li>HTML / CSS (interface web)</li>
+        </ul>
+       </div>
+    
+    <div class="images-projet">
+      <img src="../images/image_poub1.jpeg" alt="poubelle1" width="200" height="200">
+        <img src="../images/image_poub2.jpeg" alt="poubelle2" width="200" height="200">
+        <img src="../images/image_poub3.jpeg" alt="poubelle3" width="200" height="200">
+        <img src="../images/image_poub4.jpeg" alt="poubelle4" width="200" height="200">
+        <img src="../images/image_poub5.jpeg" alt="poubelle5" width="200" height="200">
+        <img src="../images/image_web.jpeg" alt="interface web" width="200" height="200">
+        <video src="../videos/video_poubelle.mp4" width="200" height="200" autoplay muted loop></video>
+      </div>
+ </div>
+
+    <div class="logo">
+          <h3>Design d’affiches créatives autour de LEGO</h3>
+            <p>
+                Conception d’affiches visuelles créatives inspirées de l’univers LEGO, avec un accent sur l’harmonie des couleurs, 
+                la mise en page et la clarté du message. 
+                Ce projet m’a permis de développer mon sens du design, de la composition graphique et de la présentation visuelle.
+            </p>
+       <div class="photo-logos">
+          <img src="../images/Logo_Picsart.jpeg" alt="picsart" width="120">   
+           <img src="../images/Logo-canva.jpeg" alt="canva" width="120"> 
+       </div>
+       <h4>Technologies :</h4>
+       <ul class="features">
+           <li>Picsart</li>
+           <li> Canva</li>
+       </ul>
+    </div>
+ </div>
  
   <footer>
     <p>&copy; 2026 Bano Camara.Tous droits réservés</p>
