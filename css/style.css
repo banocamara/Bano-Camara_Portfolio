@@ -159,3 +159,61 @@ footer{
   padding-left: 5%;
   font-size: 13px;
 }
+@media screen and (max-width: 768px) {
+  
+  nav .menu {
+    flex-direction: column;
+    padding-left: 0;
+    text-align: center;
+  }
+  
+  .menu li {
+    margin: 10px 0;
+  }
+
+  .section {
+    flex-direction: column;
+    padding: 20px 15px;
+  }
+
+  .presentation {
+    width: 90%;
+    margin: 15% auto;
+    font-size: 16px;
+  }
+
+
+  .photo img {
+    width: 120px;
+    border-width: 10px;
+  }
+
+  .titre2, .titre3 {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .photo-logos {
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .photo-logos img {
+    width: 100px;
+  }
+
+  .contact {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .contact li {
+    margin: 10px 0;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+}
