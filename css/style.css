@@ -17,7 +17,6 @@ font-size: 15px;
  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
  
 }
-
 .menu li a{
     text-decoration: none;
     margin: 10px;
@@ -33,7 +32,6 @@ nav .menu{
   flex-wrap: wrap;
 
 }
-
 
 .menu :hover{
 color: blue;
@@ -93,7 +91,6 @@ body{
    padding: 5px;
    list-style: none;
    text-decoration: none;
-  
 }
 
 .contact li a i{
@@ -129,7 +126,20 @@ article{
 .object, .parcourt, .certificats{
   padding: 10px;
 }
-
+.object{
+  background: rgba(255,255,255,0.05);
+  width: 80%;
+  margin: 30px auto;
+  padding: 15px;
+  border-radius: 10px;
+}
+.certificats{
+  background: rgba(255,255,255,0.05);
+  width: 80%;
+  margin: 30px auto;
+  padding: 15px;
+  border-radius: 10px;
+}
 .parcourt strong, .parcourt strong  a{
 
  text-decoration: none;
@@ -149,9 +159,15 @@ width: 150px;
 border-radius: 15px;
 }
 .projet{
-
   text-align: center;
   flex-wrap: wrap;
+}
+.parcourt{
+  background: rgba(255,255,255,0.05);
+  width: 80%;
+  margin: 30px auto;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 footer{
@@ -206,6 +222,11 @@ footer{
 .competences {
   text-align: center;
   margin: 20px;
+  background: rgba(255,255,255,0.05);
+  width: 80%;
+  margin: 30px auto;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 .competences ul {
@@ -214,7 +235,7 @@ footer{
 
 .competences li {
   margin: 8px 0;
-  color: #00bfff;
+  color:  rgb(18, 226, 157);
 }
 
 .recherche {
@@ -300,7 +321,63 @@ footer{
 body {
   animation: fadeIn 0.8s ease-in;
 }
+.apprentissage {
+  width: 80%;
+  margin: 30px auto;
+  padding: 15px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  text-align: center;
+}
+.apprentissage h3 {
+  color: white;
+  margin-bottom: 10px;
+}
 
+.apprentissage ul {
+  list-style: none;
+}
+
+.apprentissage li {
+  margin: 8px 0;
+}
+
+.apprentissage a {
+  color: mediumspringgreen;
+  text-decoration: none;
+}
+.video-miniature {
+  text-align: center;
+  margin: 20px;
+}
+
+.video-miniature img {
+  width: 300px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.video-miniature img:hover {
+  transform: scale(1.05);
+}
+.thumb {
+  position: relative;
+  display: inline-block;
+}
+
+.thumb img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: gray;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -312,7 +389,9 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
-
+.video-card {
+  width: 90%;
+}
   .recherche input {
   width: 80%;
 }
