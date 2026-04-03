@@ -282,7 +282,7 @@ footer{
   width: 150px;
   border-radius: 10px;
 }
-btn-cv {
+.btn-cv {
   display: inline-block;
   margin: 20px auto;
   padding: 10px 20px;
