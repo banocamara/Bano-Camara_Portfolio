@@ -388,6 +388,14 @@ body {
     transform: translateY(0);
   }
 }
+.video-title{
+  color: white;
+  font-weight: 100;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.video-title span{
+   color: mediumspringgreen;
+}
 @media screen and (max-width: 768px) {
 .video-card {
   width: 90%;
