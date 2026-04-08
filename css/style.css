@@ -33,12 +33,8 @@ nav .menu{
 
 }
 
-.menu :hover{
+.menu li a:hover{
 color: blue;
-}
-
-.menu :hover::checkmark{
-color: rgb(136, 255, 0);
 }
 
 body{
@@ -397,6 +393,76 @@ body {
 .video-title span{
    color: mediumspringgreen;
 }
+nav {
+  background: rgba(0,0,0,0.4);
+  padding: 10px;
+  border-bottom: 1px solid #00bfff;
+}
+
+.menu li a:hover {
+  color: #00bfff;
+  transition: 0.3s;
+}
+
+.btn-cv {
+  display: block;
+  text-align: center;
+  width: 200px;
+}
+
+.btn-cv:hover {
+  transform: scale(1.05);
+}
+
+.formulaire-projet {
+  width: 60%;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(0,255,200,0.05);
+  border: 1px solid #00bfff;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.formulaire-projet input,
+.formulaire-projet textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.formulaire-projet button {
+  background: mediumspringgreen;
+  color: black;
+  font-weight: bold;
+}
+
+.formulaire-projet button:hover {
+  background: #00ffaa;
+}
+
+.poubelle, .sahemarket, .logo {
+  transition: 0.3s;
+}
+
+.poubelle:hover, .sahemarket:hover, .logo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+h2, h3 {
+  letter-spacing: 1px;
+}
+
+.photo img {
+  transition: 0.3s;
+}
+
+.photo img:hover {
+  transform: scale(1.05);
+}
+
 @media screen and (max-width: 768px) {
 .video-card {
   width: 90%;
