@@ -399,7 +399,16 @@ nav {
   border-radius: 8px;
   border: none;
 }
-
+.formulaire-projet select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+.formulaire-projet input,
+.formulaire-projet textarea,
+.formulaire-projet select {
+  width: 100%;
+}
 .formulaire-projet button {
   background: mediumspringgreen;
   color: black;
@@ -476,11 +485,8 @@ h2, h3 {
 
 .competences {
   width: 80%;
-  margin: 40px auto;
-  margin: 20px;
-  background: rgba(255,255,255,0.05);
-  width: 80%;
   margin: 30px auto;
+  background: rgba(255,255,255,0.05);
   padding: 15px;
   border-radius: 10px;
 }
