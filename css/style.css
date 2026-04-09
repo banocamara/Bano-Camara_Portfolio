@@ -32,11 +32,9 @@ nav .menu{
   flex-wrap: wrap;
 
 }
-
 .menu li a:hover{
 color: blue;
 }
-
 body{
  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
 
@@ -120,7 +118,7 @@ article{
  
 }
 
-.object, .parcourt, .certificats{
+.object, .certificats{
   padding: 10px;
 }
 .object{
@@ -137,11 +135,7 @@ article{
   padding: 15px;
   border-radius: 10px;
 }
-.parcourt strong, .parcourt strong  a{
 
- text-decoration: none;
-  color: rgb(18, 226, 157);
-}
 .photo-logos{
  
  display: flex;
@@ -159,13 +153,7 @@ border-radius: 15px;
   text-align: center;
   flex-wrap: wrap;
 }
-.parcourt{
-  background: rgba(255,255,255,0.05);
-  width: 80%;
-  margin: 30px auto;
-  padding: 15px;
-  border-radius: 10px;
-}
+
 
 footer{
   text-align: center;
@@ -216,24 +204,6 @@ footer{
   background: #009acd;
 }
 
-.competences {
-  text-align: center;
-  margin: 20px;
-  background: rgba(255,255,255,0.05);
-  width: 80%;
-  margin: 30px auto;
-  padding: 15px;
-  border-radius: 10px;
-}
-
-.competences ul {
-  list-style: none;
-}
-
-.competences li {
-  margin: 8px 0;
-  color:  rgb(18, 226, 157);
-}
 
 .recherche {
   text-align: center;
@@ -287,8 +257,6 @@ footer{
 .outils li {
   margin: 5px 0;
 }
-
-
 .images-projet {
   display: flex;
   gap: 10px;
@@ -461,6 +429,81 @@ h2, h3 {
 
 .photo img:hover {
   transform: scale(1.05);
+}
+
+.timeline {
+  position: relative;
+  padding-left: 30px;
+  text-align: center;
+  background: rgba(255,255,255,0.05);
+  width: 80%;
+  margin: 30px auto;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  width: 3px;
+  height: 100%;
+  background:  mediumspringgreen;
+}
+
+.timeline-item {
+  margin-bottom: 25px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background:  mediumspringgreen;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.date {
+  color:  mediumspringgreen;
+  font-size: 14px;
+}
+
+.competences {
+  width: 80%;
+  margin: 40px auto;
+  margin: 20px;
+  background: rgba(255,255,255,0.05);
+  width: 80%;
+  margin: 30px auto;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bar {
+  height: 8px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+}
+
+.progress {
+  height: 100%;
+  background:   mediumspringgreen;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 768px) {
