@@ -162,6 +162,16 @@ footer{
   font-size: 13px;
 }
 
+footer a {
+  color: mediumspringgreen;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 .formulaire {
   width: 60%;
   margin: 30px auto;
@@ -257,6 +267,7 @@ footer{
 .outils li {
   margin: 5px 0;
 }
+
 .images-projet {
   display: flex;
   gap: 10px;
@@ -283,9 +294,11 @@ footer{
 .btn-cv:hover {
   background: #009acd;
 }
+
 body {
   animation: fadeIn 0.8s ease-in;
 }
+
 .apprentissage {
   width: 80%;
   margin: 30px auto;
@@ -325,6 +338,7 @@ body {
 .video-miniature img:hover {
   transform: scale(1.05);
 }
+
 .thumb {
   position: relative;
   display: inline-block;
@@ -343,6 +357,7 @@ body {
   font-size: 40px;
   color: gray;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -353,14 +368,17 @@ body {
     transform: translateY(0);
   }
 }
+
 .video-title{
   color: white;
   font-weight: 100;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 .video-title span{
    color: mediumspringgreen;
 }
+
 nav {
   background: rgba(0,0,0,0.4);
   padding: 10px;
@@ -392,6 +410,88 @@ nav {
   text-align: center;
 }
 
+.experience {
+  width: 80%;
+  margin: 30px auto;
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.sahemarket, .poubelle, .logo {
+  transition: 0.3s;
+}
+
+.skill i {
+  margin-right: 8px;
+  color: mediumspringgreen;
+}
+
+.sahemarket:hover, .poubelle:hover, .logo:hover {
+  transform: scale(1.02);
+}
+
+.formulaire-projet select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.formulaire-projet input,
+.formulaire-projet textarea,
+.formulaire-projet select {
+  width: 100%;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 150px;
+}
+
+.stat-box h3 {
+  color: mediumspringgreen;
+  font-size: 24px;
+}
+
+.pourquoi {
+  width: 80%;
+  margin: 30px auto;
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.pourquoi li {
+  margin: 8px 0;
+  color: mediumspringgreen;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.cta h3 {
+  color: #00bfff;
+}
+
+.formulaire-projet form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
 .formulaire-projet input,
 .formulaire-projet textarea {
   margin: 10px 0;
@@ -399,16 +499,7 @@ nav {
   border-radius: 8px;
   border: none;
 }
-.formulaire-projet select {
-  padding: 10px;
-  border-radius: 8px;
-  border: none;
-}
-.formulaire-projet input,
-.formulaire-projet textarea,
-.formulaire-projet select {
-  width: 100%;
-}
+
 .formulaire-projet button {
   background: mediumspringgreen;
   color: black;
