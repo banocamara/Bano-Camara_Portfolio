@@ -358,6 +358,36 @@ body {
   color: gray;
 }
 
+.repertoire {
+  background: rgba(255, 255, 255, 0.05);
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 15px;
+  width: 80%;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.repertoire h3 {
+  color: #00bfff;
+  margin-bottom: 10px;
+}
+
+.repertoire p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.repertoire h4 {
+  margin-top: 15px;
+  color: mediumspringgreen;
+}
+
+.repertoire:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
