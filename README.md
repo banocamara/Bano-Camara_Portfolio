@@ -1,1 +1,1 @@
-https://banocamara.github.io/Bano-Camara_Portfolio/index.html
+https://bano-camara.wuaze.com/
