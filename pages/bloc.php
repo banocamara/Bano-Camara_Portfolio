@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bano Camara</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <?php require '../composants/navigation.php'; ?>
+
+    <div class="section">
+         <article>
+            <h2 class="titre2">Bloc</h2>
+            <h3>Toujours en Progression 🚀</h3>
+            <p>
+                J’apprends, je crée, je progresse.
+                Chaque projet est une nouvelle étape pour améliorer mes compétences en développement,
+                programmation et réseaux.
+            </p>
+        </article>
+    </div>
+    <?php require '../composants/footer.php'; ?>
+
+</body>
+</html>

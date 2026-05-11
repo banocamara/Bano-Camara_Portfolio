@@ -15,7 +15,6 @@ font-size: 15px;
  margin: 10% auto;
  font-weight: 100;
  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
- 
 }
 .menu li a{
     text-decoration: none;
@@ -23,11 +22,15 @@ font-size: 15px;
     letter-spacing: 1px;
     color: aliceblue;
 }
-
+.menu li a.actif{
+  color: mediumspringgreen;
+  border-bottom: 2px solid mediumspringgreen;
+}
 nav .menu{
   display: flex;
   align-items: center;
-  padding-left: 60%;
+  justify-content: flex-end;
+  padding-right: 30px;
   list-style: none;
   flex-wrap: wrap;
 
@@ -37,8 +40,8 @@ color: blue;
 }
 body{
  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-
-  color: white;
+ color: white;
+ animation: fadeIn 0.8s ease-in;
 }
 
 .section{
@@ -112,7 +115,7 @@ article{
   padding-top: 25px;
 }
 
-.contenair{
+.container{
   flex-wrap: wrap;
   text-align: center;
  
@@ -234,30 +237,6 @@ footer a:hover {
   box-shadow: 0 0 5px #00bfff;
 }
 
-.poubelle, .sahemarket, .logo {
-  background: rgba(255, 255, 255, 0.05);
-  margin: 30px auto;
-  padding: 20px;
-  border-radius: 15px;
-  width: 80%;
-  text-align: left;
-}
-
-.poubelle h3, .sahemarket h3, .logo h3 {
-  color: #00bfff;
-  margin-bottom: 10px;
-}
-
-.poubelle p, .sahemarket p, .logo p {
-  margin: 10px 0;
-  line-height: 1.5;
-}
-
-.poubelle h4, .sahemarket h4, .logo h4 {
-  margin-top: 15px;
-  color: mediumspringgreen;
-}
-
 .features,
 .outils {
   margin-left: 20px;
@@ -266,18 +245,6 @@ footer a:hover {
 .features li,
 .outils li {
   margin: 5px 0;
-}
-
-.images-projet {
-  display: flex;
-  gap: 10px;
-  margin-top: 15px;
-  flex-wrap: wrap;
-}
-
-.images-projet img {
-  width: 150px;
-  border-radius: 10px;
 }
 
 .btn-cv {
@@ -293,10 +260,6 @@ footer a:hover {
 
 .btn-cv:hover {
   background: #009acd;
-}
-
-body {
-  animation: fadeIn 0.8s ease-in;
 }
 
 .apprentissage {
@@ -324,20 +287,6 @@ body {
   color: mediumspringgreen;
   text-decoration: none;
 }
-.video-miniature {
-  text-align: center;
-  margin: 20px;
-}
-
-.video-miniature img {
-  width: 300px;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.video-miniature img:hover {
-  transform: scale(1.05);
-}
 
 .thumb {
   position: relative;
@@ -357,36 +306,18 @@ body {
   font-size: 40px;
   color: gray;
 }
-
-.repertoire {
-  background: rgba(255, 255, 255, 0.05);
-  margin: 30px auto;
-  padding: 20px;
-  border-radius: 15px;
-  width: 80%;
-  text-align: left;
-  transition: 0.3s;
-}
-
-.repertoire h3 {
-  color: #00bfff;
-  margin-bottom: 10px;
-}
-
-.repertoire p {
-  margin: 10px 0;
-  line-height: 1.5;
-}
-
-.repertoire h4 {
-  margin-top: 15px;
+.outil{
   color: mediumspringgreen;
 }
 
-.repertoire:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+.video-projet{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 15px;
 }
+
 
 @keyframes fadeIn {
   from {
@@ -448,17 +379,9 @@ nav {
   border-radius: 10px;
 }
 
-.sahemarket, .poubelle, .logo {
-  transition: 0.3s;
-}
-
 .skill i {
   margin-right: 8px;
   color: mediumspringgreen;
-}
-
-.sahemarket:hover, .poubelle:hover, .logo:hover {
-  transform: scale(1.02);
 }
 
 .formulaire-projet select {
@@ -538,15 +461,6 @@ nav {
 
 .formulaire-projet button:hover {
   background: #00ffaa;
-}
-
-.poubelle, .sahemarket, .logo {
-  transition: 0.3s;
-}
-
-.poubelle:hover, .sahemarket:hover, .logo:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
 h2, h3 {
@@ -632,6 +546,70 @@ h2, h3 {
   background:   mediumspringgreen;
   border-radius: 10px;
 }
+.carte-projet img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+.projets-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.carte-projet{
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+    height: 100%;
+}
+
+.titre_projet{
+  color:  #00bfff;;
+}
+
+.succes{
+    background-color: #d4edda;
+    color: #155724;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.carte-projet:hover{
+    transform: translateY(-5px);
+}
+
+.erreurs{
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.erreurs p{
+    margin: 5px 0;
+}
+
+.video-card{
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 15px;
+  width: 320px;
+  transition: 0.3s;
+}
+
+.video-card:hover{
+  transform: translateY(-5px);
+}
 
 @media screen and (max-width: 768px) {
 .video-card {
@@ -645,7 +623,7 @@ h2, h3 {
   width: 95%;
 }
 
-.images-projet, .video {
+.images-projet {
   justify-content: center;
 }
 

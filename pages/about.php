@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bano Camara</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  
+    <?php require '../composants/navigation.php'; ?>
+
+      <h2 class="titre3">À propos de moi</h2>
+       
+    <div class="contenair">
+            <div class="object">
+                <h3>Mon objectif</h3>
+                <p>
+                    Mon objectif est de devenir un développeur compétent <br> capable de créer
+                    des solutions utiles et bien construites.
+                </p>  
+            </div>
+                        
+
+        <div class="timeline">
+            <h3>Parcours Académique</h3>
+
+            <div class="timeline-item">
+                <span class="date">2024 - Présent</span>
+                <h4>Licence 2 en Génie Logiciel et Administration Réseaux </h4>
+                <p>ESTM</p>
+            </div>
+
+            <div class="timeline-item">
+                <span class="date">2023 - 2024</span>
+                <h4>Baccalauréat Scientifiques</h4>
+                <p>Beeli El Houra à Nouakchott</p>
+            </div>
+            </div>
+
+            <div class="experience">
+            <h3>Expérience</h3>
+            <p>Actuellement à la recherche d'opportunités de stage pour développer mes compétences.</p>
+            </div>
+
+            <div class="competences">
+            <h3>Mes compétences</h3>
+
+            <div class="skill">
+                <p><i class="fa-brands fa-html5"></i> HTML <span>90%</span></p>
+                <div class="bar"><div class="progress" style="width:90%"></div></div>
+            </div>
+
+            <div class="skill">
+                <p><i class="fa-brands fa-css3-alt"></i>CSS <span>90%</span></p>
+                <div class="bar"><div class="progress" style="width:80%"></div></div>
+            </div>
+
+            <div class="skill">
+                <p><i class="fa-brands fa-js"></i>JavaScript <span>60%</span></p>
+                <div class="bar"><div class="progress" style="width:60%"></div></div>
+            </div>
+
+            <div class="skill">
+                <p><i class="fa-solid fa-c"></i>Programmation en C <span>90%</span></p>
+                <div class="bar"><div class="progress" style="width:90%"></div></div>
+            </div>
+
+            <div class="skill">
+                <p><i class="fa-brands fa-github"></i>Git / GitHub <span>70%</span></p>
+                <div class="bar"><div class="progress" style="width:70%"></div></div>
+            </div>
+
+            <div class="skill">
+                <p><i class="fa-brands fa-php"></i>PHP<span>90%</span></p>
+                <div class="bar"><div class="progress" style="width:90%"></div></div>
+            </div>
+
+             <div class="skill">
+                <p><i class="fa-solid fa-database"></i>MYSQL<span>80%</span></p>
+                <div class="bar"><div class="progress" style="width:80%"></div></div>
+            </div>
+
+            <div class="skill">
+                <p><i class="fa-brands fa-python"></i>Python <span>85%</span></p>
+                <div class="bar"><div class="progress" style="width:85%"></div></div>
+            </div>
+
+        </div>
+
+        <div class="apprentissage">
+                <h3>Apprentissage</h3>
+
+                <p>
+                    Pour renforcer mes compétences, je me forme régulièrement à travers
+                    des vidéos en ligne et des ressources spécialisées en développement
+                    web, programmation et réseaux.
+                </p>
+
+                <ul>
+                <div class="video-container">
+                    
+                    <div class="video-card">
+                            <a href="https://www.youtube.com/watch?v=mdIglZ0fvRQ" target="_blank">
+                                <div class="thumb">
+                                    <img src="https://img.youtube.com/vi/mdIglZ0fvRQ/maxresdefault.jpg" alt="video 1">
+                                    <span class="play">▶</span>
+                                </div>
+                                <p class="video-title">Avec <span>Mr Cherif Diouf</span>, vous trouverez un riche catalogue de cours couvrant divers aspects de l'informatique,
+                                des fondamentaux de la programmation aux technologies web les plus récentes.</p>
+                            </a>
+                    </div>
+
+                    <div class="video-card">
+                        <a href="https://youtu.be/G_GOI1fD8GM" target="_blank">
+                        <div class="thumb">
+                            <img src="https://img.youtube.com/vi/G_GOI1fD8GM/maxresdefault.jpg" alt="video 2">
+                            <span class="play">▶</span>
+                        </div>
+                        <p class="video-title"><span>École Numérique du Génie en Programmation</span> vous
+                            offre des cours complets, accessibles, pratiques et abordables.</p>
+                        </a>
+                    </div>
+
+                </div>
+                <br>
+                <h4>Sites </h4>
+            <li><a href="https://www.w3schools.com/" target="_blank"> W3Schools</a></li>
+            <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs </a></li> 
+            <li><a href="https://www.sololearn.com/fr/learn" target="_blank"> Sololearn </a></li> 
+            <li><a href="https://www.cyberlandsec.com" target="_blank"> CyberLand </a></li>
+                    
+        </div>
+        <div class="certificats">
+            <h3>Mes cértificats</h3>
+            <p><strong>CyberLand: </strong>Sécurité des mots de passe </p>
+        </div>          
+    </div>
+    <?php require '../composants/footer.php'; ?>
+</body>
+</html>
