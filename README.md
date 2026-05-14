@@ -30,8 +30,8 @@ Une base de données sera intégrée prochainement afin d’ajouter de nouvelles
 
 ## Technologies utilisées
 
-- HTML5
-- CSS3
+- HTML
+- CSS
 - PHP
 
 ## Auteur
