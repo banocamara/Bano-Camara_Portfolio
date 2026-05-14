@@ -32,7 +32,6 @@ Une base de données sera intégrée prochainement afin d’ajouter de nouvelles
 
 - HTML5
 - CSS3
-- JavaScript
 - PHP
 
 ## Auteur
